@@ -31,7 +31,7 @@ function handleWineInfo(e) {
         $productImage.attr('src', data.productMatches[0].imageUrl);
         $description.text(data.productMatches[0].description);
         $link.attr('href', data.productMatches[0].link);
-        $link.text(data.productMatches[0].link)
+        $link.text("Purchase " + data.productMatches[0].title)
     }), function() {
         document.getElementById("error").style.display = "block"
     }
