@@ -6,6 +6,9 @@ const $wine = $('.wine');
 const $pairingText = $('#pairingText');
 const $title = $('#title');
 const $description = $('#description');
+const $productImage = $('#product-image');
+const $price = $('#price');
+const $link = $('#link');
 
 $('form').on('submit', handleWineInfo);
 
@@ -22,6 +25,10 @@ function handleWineInfo(e) {
         })
         $pairingText.text(data.pairingText);
         document.getElementById("recprod").style.display = "block";
-        $title.text(data.productMatches[0].title)
-        $description.text(data.productMatches[0].description)
+        $title.text(data.productMatches[0].title);
+        $price.text(data.productMatches[0].price);
+        $productImage.attr('src', data.productMatches[0].imageUrl);
+        $description.text(data.productMatches[0].description);
+        $link.attr('href', data.productMatches[0].link);
+        $link.text(data.productMatches[0].link)
     })}
