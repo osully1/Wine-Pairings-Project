@@ -4,6 +4,8 @@
 const $input = $('#searchBox');
 const $wine = $('.wine');
 const $pairingText = $('#pairingText');
+const $title = $('#title');
+const $description = $('#description');
 
 $('form').on('submit', handleWineInfo);
 
@@ -19,4 +21,7 @@ function handleWineInfo(e) {
             li.innerHTML += wine;
         })
         $pairingText.text(data.pairingText);
+        document.getElementById("recprod").style.display = "block";
+        $title.text(data.productMatches[0].title)
+        $description.text(data.productMatches[0].description)
     })}
