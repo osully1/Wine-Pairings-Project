@@ -10,24 +10,31 @@
     <title>Wine-API-Project</title>
 </head>
 <body>
-    <h1>Wine Companion</h1>
-    <form>
-        <input
-            type="text"
-            placeholder="Food, Indredient, or Cuisine"
-            id="searchBox"
-        />
-    <input type="submit" value="Get Wine Pairings!" class="btn"/>
-</form>
-<div id="wineList">
-</div>
-<p id="pairingText"></p>
-
-<h3 id="recprod">Recommended Product</h3>
-<p id="title"></p>
-<p id="price"></p>
-<img id="product-image">
-<p id="description"></p>
-<a target="_blank" id="link"></a>
+    <div class="content-container">
+        <div class="pairing-container">
+            <h1>Wine Companion</h1>
+            <form>
+                <input
+                    type="text"
+                    placeholder="Food, Indredient, or Cuisine"
+                    id="searchBox"
+                />
+                <input type="submit" value="Get Wine Pairings!" class="btn"/>
+            </form>
+            <p id="error">Error: Try a food, ingredient, or cuisine</p>
+            <div id="wineList"></div>
+            <p id="pairingText"></p>
+        </div>
+        <div class="recprod-container"> 
+            <h3 id="recprod">Recommended Product</h3>
+            <p id="title"></p>
+            <p id="price"></p>
+            <div class="product-info">
+                <img id="product-image">
+                <p id="description"></p>
+            </div>
+            <a target="_blank" id="link"></a>
+        </div>
+    </div>
 </body>
 </html>

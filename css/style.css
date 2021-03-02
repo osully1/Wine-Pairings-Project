@@ -1,7 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
 #recprod {
     display: none;
 }
 
+#error {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 body {
-    background: url("https://i.imgur.com/INqx9ZP.jpg?1")
+    background-color: black;
+    background-image: url("https://i.imgur.com/INqx9ZP.jpg?1");
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Kalam', cursive;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 0 3em 0;
+    margin: 2rem 10rem 0 47rem;
+}
+
+.pairing-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 4em 2em 10em;
+    justify-content: space-between;
+}
+
+.recprod-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4em 0 10em;
+}
+
+#product-image {
+    align-self: center;
+    float: left;
+}
+
+#description {
+    
+}
+
+#wineList {
+    /* text-indent: 2.5%; */
+    margin: 1em;
+}
+
+form {
+    margin: 1em 0 0 0;
+}
+
+#title {
+    margin: 1em 0 0 0;
+}
+
+.product-info {
+    margin: 1em;
+}
+
+#product-image {
+    margin: 0 1em 0 0;
+    align-self: flex-start;
+    max-height: 15em;
+    width: auto;
+}
+
+#searchBox {
+    width: 180px
 }

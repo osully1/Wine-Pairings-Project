@@ -14,6 +14,7 @@ $('form').on('submit', handleWineInfo);
 
 function handleWineInfo(e) {
     e.preventDefault();
+    // document.getElementsByTagName('li').innerHTML() = '';
     const term = $input.val();
     $.ajax('https://api.spoonacular.com/food/wine/pairing?apiKey=943f525789854813b6099c3922ce1010&food=' + term).then(function(data) {
         ul = document.createElement('ul');
@@ -31,4 +32,7 @@ function handleWineInfo(e) {
         $description.text(data.productMatches[0].description);
         $link.attr('href', data.productMatches[0].link);
         $link.text(data.productMatches[0].link)
-    })}
+    }), function() {
+        document.getElementById("error").style.display = "block"
+    }
+}
