@@ -9,14 +9,15 @@ const $description = $('#description');
 const $productImage = $('#product-image');
 const $price = $('#price');
 const $link = $('#link');
+const $wineList = $('#wineList');
 
 $('form').on('submit', handleWineInfo);
 
 function handleWineInfo(e) {
     e.preventDefault();
-    // document.getElementsByTagName('li').innerHTML() = '';
     const term = $input.val();
     $.ajax('https://api.spoonacular.com/food/wine/pairing?apiKey=943f525789854813b6099c3922ce1010&food=' + term).then(function(data) {
+        $wineList.empty();
         ul = document.createElement('ul');
         document.getElementById('wineList').appendChild(ul);
         data.pairedWines.forEach(function(wine) {
