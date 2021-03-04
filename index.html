@@ -12,24 +12,26 @@
 <body>
     <div class="content-container">
         <div class="pairing-container">
-            <h1>Owine</h1>
-            <h1>Pairing Companion</h1>
+            <h1 class="center" id="Owen">Owine</h1>
+            <h1 class="center">Pairing Companion</h1>
             <form>
-                <input
-                    type="text"
-                    placeholder="Food, Indredient, or Cuisine"
-                    id="searchBox"
-                />
-                <input type="submit" value="Get Wine Pairings!" class="btn"/>
+                <div class="search">
+                    <input
+                        type="text"
+                        placeholder="Food, Indredient, or Cuisine"
+                        id="searchBox"
+                    />
+                    <input type="submit" value="Get Wine Pairings!" class="btn"/> 
+                </div>
             </form>
             <p id="error">Error: Try a food, ingredient, or cuisine</p>
-            <div id="wineList"></div>
+            <div class="center" id="wineList"></div>
             <p id="pairingText"></p>
         </div>
         <div class="recprod-container"> 
-            <h3 id="recprod">Recommended Product</h3>
-            <p id="title"></p>
-            <p id="price"></p>
+            <h3 class="center" id="recprod">Recommended Product</h3>
+            <p class="center" id="title"></p>
+            <p class="center" id="price"></p>
             <div class="product-info">
                 <img id="product-image">
                 <p id="description"></p>

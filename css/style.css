@@ -24,31 +24,35 @@ ul {
 
 body {
     background-color: black;
-    background-image: url("https://i.imgur.com/INqx9ZP.jpg?1");
     background-repeat: no-repeat;
-    color: white;
+    color: whitesmoke;
     font-family: 'Kalam', cursive;
+}
+
+.center {
+    text-align: center;
 }
 
 .content-container {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem 0 3rem 0;
-    margin: 2rem 5rem 0 46rem;
+    margin: 1em 0 0 0
 }
 
 .pairing-container {
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0 4em 2em 10em;
     justify-content: space-between;
+}
+
+#pairingText {
+    margin: 0 1em 0 1em;
 }
 
 .recprod-container {
     display: flex;
     flex-direction: column;
-    margin: 0 4em 0 10em;
+    margin: 2em 0 0 0
 }
 
 #product-image {
@@ -62,7 +66,7 @@ body {
 }
 
 form {
-    margin: 1em 0 0 0;
+    margin: 1em auto auto auto;
 }
 
 #title {
@@ -86,5 +90,46 @@ form {
 
 #link {
     color: #307CE9;
-    margin: 0 0 0 1em;
+    margin: auto auto 1.5em auto;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url("https://i.imgur.com/INqx9ZP.jpg?1");
+    }
+
+    .center {
+        text-align: left;
+    }
+
+    form {
+        margin: 1em 0 0 0;
+    } 
+
+    .content-container {
+        padding: 1.5rem 0 3rem 0;
+        margin: 1rem 5rem 0 46rem;
+    }
+
+    .pairing-container {
+        padding: 0;
+        margin: 0 4em 2em 10em;
+    }
+
+    #pairingText {
+        margin: 0;
+    }
+
+    .recprod-container {
+        margin: 0 4em 0 10em;
+    }
+
+    #product-image {
+        float: left;
+    }
+
+    #link {
+        margin: 0 0 0 1em;
+    }
+
 }
