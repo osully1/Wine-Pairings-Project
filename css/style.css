@@ -27,6 +27,7 @@ body {
     background-repeat: no-repeat;
     color: #CCCCCC;
     font-family: 'Kalam', cursive;
+    font-size: 110%
 }
 
 .center {
@@ -47,6 +48,7 @@ body {
 
 #pairingText {
     margin: 0 1em 0 1em;
+    line-height: 1.9em;
 }
 
 #searchBox {
@@ -88,6 +90,7 @@ form {
 
 .product-info {
     margin: 1em;
+    line-height: 1.9em;
 }
 
 #product-image {
