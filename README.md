@@ -14,5 +14,7 @@ The O-wine Pairing Companion takes advantage of the following technologies:
   * jquery
   * ajax requests to the Spoonacular API
   * media queries to format it for mobile and desktop use
+
+My personal goal for this project was to focus on styling (my biggest weakness). The JS involves a simple API request that adds text to empty p tags and an SRC attribute to an empty IMG tag. Then, the majority of my primary focus was CSS styling and mobile-first formatting.
   
 The next step for this project is to format and style for medium-sized screens such as tablets. Then, if not too cumbersome, provide suggestions of recipes to go with the food, ingredient, or cuisine of choice.
