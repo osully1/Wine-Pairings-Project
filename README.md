@@ -11,8 +11,9 @@ The O-wine Pairing Companion will accept most any food, ingredient, or cuisine-t
   * A link that will brings you to a page where you can buy this recommended product in a new window
   
 The O-wine Pairing Companion takes advantage of the following technologies:
-  * jquery
+  * Spoonacular API: https://spoonacular.com/food-api
   * ajax requests to the Spoonacular API
+  * jquery
   * media queries to format it for mobile and desktop use
 
 My personal goal for this project was to focus on styling (my biggest weakness). The JS involves a simple API request that adds text to empty p tags and an SRC attribute to an empty IMG tag. Then, the majority of my primary focus was CSS styling and mobile-first formatting.
